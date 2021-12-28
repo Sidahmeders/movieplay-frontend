@@ -20,7 +20,7 @@ export default function TextInputElement({ label, value, type, changeHandler }) 
                     type={inputType ? inputType : 'text'}
                     name={label}
                     value={value}
-                    placeholder={label}
+                    placeholder={label ? label : 'text-input-element'}
                     onChange={changeHandler}
                     spellCheck="false"
                 />
@@ -28,7 +28,7 @@ export default function TextInputElement({ label, value, type, changeHandler }) 
                     <img
                         className="password-eye"
                         onClick={handlePasswordVisibility}
-                        width="20px"
+                        width="55px"
                         src={eye}
                         alt="eye"
                     />

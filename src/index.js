@@ -16,13 +16,13 @@ const GlobalStyle = createGlobalStyle`
    src: url(/assets/fonts/Montserrat-Regular.ttf);
  }
 
-  * {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Montserrat, sans-serif;
+    user-select: none;
   }
-
- 
 `
 
 ReactDOM.render(
