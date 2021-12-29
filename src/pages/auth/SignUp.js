@@ -1,4 +1,5 @@
 import TextInputElement from '../../components/common/form/TextInputElement'
+import RadioInputElement from '../../components/common/form/RadioInputElement'
 import { InputFieldStyle } from './styles'
 
 export default function SignUp({ userInfo, hadnleUserInfoChange }) {
@@ -30,6 +31,7 @@ export default function SignUp({ userInfo, hadnleUserInfoChange }) {
                 value={userInfo.password}
                 changeHandler={hadnleUserInfoChange}
             />
+            <RadioInputElement label="gender" options={['male', 'female', 'others']} />
         </InputFieldStyle>
     )
 }

@@ -21,7 +21,7 @@ export const InputFieldStyle = styled.div`
 
 export const ToggleButtonStyle = styled.div`
     width: 35%;
-    margin: 20px 30px;
+    margin: 0 30px;
     position: relative;
     display: flex;
     border: 2px solid #4d32;
