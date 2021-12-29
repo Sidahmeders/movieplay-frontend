@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const RadioInputStyle = styled.div`
     padding: 5px 15px;
-    background: #f6fff6f6;
-    border-radius: 4px;
     margin: 0 10px;
     margin-top: 5px;
 
@@ -11,7 +9,8 @@ export const RadioInputStyle = styled.div`
         font-size: 16px;
         margin: 5px 0;
         font-weight: 300;
-        text-transform: capitalize;
+        text-transform: uppercase;
+        color: aliceblue;
     }
 
     .options {
@@ -21,6 +20,8 @@ export const RadioInputStyle = styled.div`
 
         .option {
             margin: 5px;
+            background: #f6fff6f6;
+            border-radius: 4px;
 
             label {
                 display: flex;
