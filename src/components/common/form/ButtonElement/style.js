@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const ButtonStyle = styled.div`
     width: ${({ width }) => width};
-    border-radius: ${({ borderRadius }) => borderRadius};
     background: ${({ focused }) => (focused ? '#168049' : '')};
     min-width: 120px;
     color: #fff;

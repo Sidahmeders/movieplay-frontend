@@ -1,13 +1,9 @@
 import { ButtonStyle } from './style'
 
-export default function ButtonElement({ label, clickHandler, width, borderRadius, focused }) {
+export default function ButtonElement({ label, clickHandler, width, focused }) {
     return (
         <>
-            <ButtonStyle
-                onClick={clickHandler}
-                width={width}
-                borderRadius={borderRadius}
-                focused={focused}>
+            <ButtonStyle onClick={clickHandler} width={width} focused={focused}>
                 <div>{label ? label : 'Button-Element'}</div>
             </ButtonStyle>
         </>
