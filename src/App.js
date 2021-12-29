@@ -2,7 +2,7 @@ import Layout from './components/Layout/Layout'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // import { ContextConsumer } from './context'
 
-import LoginPage from './pages/login'
+import AuthPage from './pages/auth'
 import HomePage from './pages/home'
 // import Cliques from './pages/home'
 
@@ -12,7 +12,7 @@ function App() {
         <>
             <Router>
                 <Switch>
-                    <Route exact path="/" component={LoginPage} />
+                    <Route exact path="/" component={AuthPage} />
                     <Layout>
                         <Route exact path="/home" component={HomePage} />
                         {/* <Route path="/cliques" component={Cliques} /> */}
