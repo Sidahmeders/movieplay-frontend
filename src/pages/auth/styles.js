@@ -19,7 +19,7 @@ export const InputFieldStyle = styled.div`
     }
 `
 
-export const ButtonsStyle = styled.div`
+export const ToggleButtonStyle = styled.div`
     width: 35%;
     margin: 20px 30px;
     position: relative;
@@ -43,7 +43,7 @@ export const ButtonsStyle = styled.div`
     }
 `
 
-export const HeroStyle = styled.div`
+export const TitleStyle = styled.div`
     width: 35%;
     margin: 15px 30px 0 0;
     text-align: center;

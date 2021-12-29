@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { AuthContainerStyle, HeroStyle, ButtonsStyle } from './styles'
+import { AuthContainerStyle } from './styles'
 
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import ToggleButtons from './ToggleButtons'
-import HeroSection from './HeroSection'
+import Title from './Title'
+import Hero from './Hero'
 
 const initialUserInfo = {
     first_name: '',
@@ -38,14 +39,10 @@ export default function LoginPage() {
                 ) : (
                     <SignUp userInfo={userInfo} hadnleUserInfoChange={hadnleUserInfoChange} />
                 )}
-                <ButtonsStyle>
-                    <ToggleButtons focused={focused} setFocused={setFocused} />
-                </ButtonsStyle>
-
-                <HeroStyle>
-                    <HeroSection />
-                </HeroStyle>
+                <ToggleButtons focused={focused} setFocused={setFocused} />
+                <Title />
             </AuthContainerStyle>
+            <Hero />
         </>
     )
 }
