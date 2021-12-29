@@ -12,6 +12,11 @@ export const AuthContainerStyle = styled.div`
 export const InputFieldStyle = styled.div`
     width: 35%;
     margin: 20px 30px;
+
+    .slice {
+        display: flex;
+        justify-content: center;
+    }
 `
 
 export const ButtonsStyle = styled.div`

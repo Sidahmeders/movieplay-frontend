@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import ButtonElement from '../../components/common/form/ButtonElement'
 
-export default function SignInButtons() {
-    const [focused, setFocused] = useState(true)
-
+export default function SignInButtons({ focused, setFocused }) {
     return (
         <>
             <ButtonElement

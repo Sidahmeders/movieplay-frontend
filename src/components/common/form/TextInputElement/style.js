@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const TextInputStyle = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 5px 20px;
+    padding: 5px 10px;
     position: relative;
 
     input {
+        width: 100%;
         outline: none;
         padding: 22px 15px 18px 15px;
         font-size: 18px;
