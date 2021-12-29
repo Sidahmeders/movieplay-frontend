@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LoginContainer = styled.div`
+export const AuthContainerStyle = styled.div`
     height: 100vh;
     width: 100vw;
     background: linear-gradient(#177c4d 15%, #000);

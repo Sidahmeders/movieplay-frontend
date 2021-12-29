@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { LoginContainer, InputFieldStyle, HeroStyle, ButtonsStyle } from './styles'
+import { AuthContainerStyle, InputFieldStyle, HeroStyle, ButtonsStyle } from './styles'
 import TextInputElement from '../../components/common/form/TextInputElement'
-import SignInButtons from './SignInButtons'
+import ToggleButtons from './ToggleButtons'
 import HeroSection from './HeroSection'
 
 const initialUserInfo = {
@@ -26,7 +26,7 @@ export default function LoginPage() {
 
     return (
         <>
-            <LoginContainer>
+            <AuthContainerStyle>
                 <InputFieldStyle>
                     <TextInputElement
                         label="email"
@@ -43,13 +43,13 @@ export default function LoginPage() {
                 </InputFieldStyle>
 
                 <ButtonsStyle>
-                    <SignInButtons />
+                    <ToggleButtons />
                 </ButtonsStyle>
 
                 <HeroStyle>
                     <HeroSection />
                 </HeroStyle>
-            </LoginContainer>
+            </AuthContainerStyle>
         </>
     )
 }
