@@ -1,9 +1,10 @@
 import MovieGif from '../../assets/images/movie3.gif'
+import { HeroStyle } from './styles'
 
 export default function Hero() {
     return (
-        <div style={{ position: 'absolute', top: '5%', left: '10%', opacity: '0.6' }}>
+        <HeroStyle>
             <img src={MovieGif} alt="logo" />
-        </div>
+        </HeroStyle>
     )
 }

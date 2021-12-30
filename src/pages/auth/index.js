@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AuthContainerStyle } from './styles'
+import { AuthContainerStyle, RightFloatContainer } from './styles'
 
 import SignIn from './SignIn'
 import SignUp from './SignUp'
@@ -32,8 +32,8 @@ export default function LoginPage() {
     }
 
     return (
-        <>
-            <AuthContainerStyle>
+        <AuthContainerStyle>
+            <RightFloatContainer>
                 {focused ? (
                     <SignIn userInfo={userInfo} hadnleUserInfoChange={hadnleUserInfoChange} />
                 ) : (
@@ -41,8 +41,9 @@ export default function LoginPage() {
                 )}
                 <ToggleButtons focused={focused} setFocused={setFocused} />
                 <Title />
-            </AuthContainerStyle>
+            </RightFloatContainer>
+
             <Hero />
-        </>
+        </AuthContainerStyle>
     )
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const RadioInputStyle = styled.div`
-    padding: 5px 15px;
+    padding: 5px;
     margin: 0 10px;
     margin-top: 5px;
 
@@ -25,7 +25,7 @@ export const RadioInputStyle = styled.div`
 
             label {
                 display: flex;
-                padding: 6px 30px;
+                padding: 6px 20px;
                 border: 2px solid gray;
                 border-radius: 4px;
             }
